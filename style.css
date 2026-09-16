@@ -20,8 +20,7 @@ body {
 }
 
 
-.card button,
-.submit-subscribe {
+.button{
     cursor: pointer;
 }
 
@@ -233,7 +232,6 @@ select {
     color: white;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 .button-green:hover {
@@ -579,7 +577,6 @@ select {
     color: white;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     margin: 0;
 }
 
