@@ -90,12 +90,24 @@ select {
 
 .hero-text {
     width: 1200px;
-    
+
+}
+
+.hero-button a {
+    width: 100%;
+    max-width: 152px;
+    text-align: center;
+    display: inline-block;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #415123;
+    padding: 20px;
+    margin: 10px 20px 0 0;
 }
 
 .hero-text,
-.hero-button,
-.hero-button .button-view {
+.hero-button {
     position: relative;
     z-index: 1;
 }
@@ -117,16 +129,6 @@ select {
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
-}
-
-.hero-button a {
-    display: inline-block;
-    color: #fff;
-    border-radius: 10px;
-    text-decoration: none;
-    background-color: #415123;
-    padding: 20px;
-    margin: 10px 20px 0 0;
 }
 
 .hero-button .button-view {
@@ -232,15 +234,21 @@ select {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.card button:hover,
-.submit-subscribe:hover,
-.button-shop:hover
-#nav-menu a:hover {
+.button-green:hover {
     background: #2d3a17;
 }
+
+.button-transparent:hover {
+    background-color: #cccccc94;
+}
+
+.nav-link a:hover {
+    color: #2d3a17;
+}
+
+
 
 
 /*--are--*/
@@ -948,7 +956,7 @@ hr {
         font-size: 11px;
         width: 100%;
         height: 34px;
-        margin: 0;
+        margin-top: 20px;
     }
 
     /*---- are ----*/
@@ -1076,12 +1084,6 @@ hr {
 
     .card3 {
         grid-column: auto;
-    }
-
-    .card1 button,
-    .card2 button,
-    .card3 button {
-        margin-top: 20px;
     }
 
 
