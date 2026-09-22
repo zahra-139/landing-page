@@ -12,22 +12,33 @@
 
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">
-            <img src="image/logo-02.png" alt="logo">
-        </a>
-        <div class="nav-mobile">
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <div class="nav-menu" id="nav-menu">
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#" class="logo">
+                <img src="image/logo-02.png" alt="Logo">
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="nav-link">
                 <a href="#ABOUT">ABOUT</a>
                 <a href="#PRODUCTS">PRODUCTS</a>
                 <a href="#CONTACT">CONTACT</a>
             </div>
-        </div>
 
-        <div class="nav-link">
-            <a href="#ABOUT">ABOUT</a>
-            <a href="#PRODUCTS">PRODUCTS</a>
-            <a href="#CONTACT">CONTACT</a>
+            <!-- Mobile Menu -->
+            <div class="nav-mobile">
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+                    ☰
+                </button>
+
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#ABOUT">ABOUT</a>
+                    <a href="#PRODUCTS">PRODUCTS</a>
+                    <a href="#CONTACT">CONTACT</a>
+                </div>
+            </div>
+
         </div>
     </nav>
 

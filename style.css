@@ -39,9 +39,16 @@ select {
 
 /*--header--*/
 
+.logo {
+    display: flex;
+    align-items: center;
+}
+
 .logo img {
     width: 120px;
     height: 41px;
+    display: block;
+    object-fit: contain;
 }
 
 .navbar {
@@ -51,6 +58,19 @@ select {
     padding: 15px 50px;
     height: auto;
     max-height: 70px;
+}
+
+.navbar .container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 70px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
 }
 
 .nav-link a {
@@ -321,9 +341,6 @@ select {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 20px 0;
-    width: 100%;
-    padding: 0 20px;
 }
 
 .why-card {
@@ -335,8 +352,6 @@ select {
     box-shadow: 10px 32px 72px 0px rgba(51, 51, 51, 0.03);
     border-radius: 10px;
 }
-
-
 
 .why-container .icon {
     width: 70.8px;
@@ -1220,13 +1235,15 @@ hr {
         justify-self: center;
     }
 
+    /*-----------------*/
+
     .product-container {
         display: grid;
         gap: 25px;
         padding: 0 30px;
     }
 
-    .card:last-child {
+    .card:last-child{
         grid-column: 1 / 3;
         justify-self: center;
         width: 100%;
@@ -1251,4 +1268,21 @@ hr {
     .footer-box {
         margin: 0;
     }
+
+    /*-----------------------------------------------------------------------------------*/
+
+    .why-container {
+        display: grid;
+        gap: 25px;
+        padding: 0 40px;
+        
+    }
+
+    .why-card:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: 100%;
+        max-width: 380px;
+    }
+
 }
